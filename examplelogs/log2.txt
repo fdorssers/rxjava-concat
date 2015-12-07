@@ -1,0 +1,71 @@
+12-07 01:11:18.243 22319-22319/com.example.observableconcat D/ContextHelper: convertTheme. context->name=com.example.observableconcat themeResourceId=2131296304
+12-07 01:11:18.263 22319-22319/com.example.observableconcat I/PhoneWindow: [generateLayout] setColorNavigationBar => color=0x ff000001
+12-07 01:11:18.263 22319-22319/com.example.observableconcat D/PhoneWindowEx: [PWEx][generateLayout] setNavigationBarColor2 : colors=0xff000000
+12-07 01:11:18.263 22319-22319/com.example.observableconcat I/PhoneWindow: [setNavigationBarColor2] color=0x ff000000
+12-07 01:11:18.333 22319-22319/com.example.observableconcat I/Activity: Activity.onPostResume() called
+12-07 01:11:18.343 22319-22355/com.example.observableconcat D/OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+12-07 01:11:18.343 22319-22319/com.example.observableconcat D/Atlas: Validating map...
+12-07 01:11:18.383 22319-22355/com.example.observableconcat I/Adreno: QUALCOMM build                   : 7fcf94b, Ib2e715f795
+                                                                      Build Date                       : 07/03/15
+                                                                      OpenGL ES Shader Compiler Version: E031.25.03.09
+                                                                      Local Branch                     :
+                                                                      Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.BF64.1.2.1_RB2.05.01.01.081.049
+                                                                      Remote Branch                    : NONE
+                                                                      Reconstruct Branch               : NOTHING
+12-07 01:11:18.393 22319-22355/com.example.observableconcat I/OpenGLRenderer: Initialized EGL, version 1.4
+12-07 01:11:18.403 22319-22356/com.example.observableconcat D/Retrofit: ---> HTTP GET https://api.github.com/users/square/repos?per_page=5
+12-07 01:11:18.413 22319-22355/com.example.observableconcat D/OpenGLRenderer: Enabling debug mode 0
+12-07 01:11:18.423 22319-22356/com.example.observableconcat D/libc-netbsd: [getaddrinfo]: hostname=xxxxx; servname=(null); cache_mode=(null), netid=0; mark=0
+12-07 01:11:18.423 22319-22356/com.example.observableconcat D/libc-netbsd: [getaddrinfo]: ai_addrlen=0; ai_canonname=xxxxx; ai_flags=4; ai_family=0
+12-07 01:11:18.423 22319-22356/com.example.observableconcat D/libc-netbsd: [getaddrinfo]: hostname=xxxxx; servname=(null); cache_mode=(null), netid=0; mark=0
+12-07 01:11:18.423 22319-22356/com.example.observableconcat D/libc-netbsd: [getaddrinfo]: ai_addrlen=0; ai_canonname=xxxxx; ai_flags=1024; ai_family=0
+12-07 01:11:18.423 22319-22356/com.example.observableconcat D/Retrofit: ---- ERROR https://api.github.com/users/square/repos?per_page=5
+12-07 01:11:18.423 22319-22356/com.example.observableconcat D/Retrofit: java.net.UnknownHostException: Unable to resolve host "api.github.com": No address associated with hostname
+                                                                            at java.net.InetAddress.lookupHostByName(InetAddress.java:482)
+                                                                            at java.net.InetAddress.getAllByNameImpl(InetAddress.java:255)
+                                                                            at java.net.InetAddress.getAllByName(InetAddress.java:218)
+                                                                            at com.squareup.okhttp.internal.Dns$1.getAllByName(Dns.java:29)
+                                                                            at com.squareup.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:231)
+                                                                            at com.squareup.okhttp.internal.http.RouteSelector.next(RouteSelector.java:124)
+                                                                            at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:317)
+                                                                            at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:241)
+                                                                            at com.squareup.okhttp.Call.getResponse(Call.java:198)
+                                                                            at com.squareup.okhttp.Call.execute(Call.java:80)
+                                                                            at retrofit.client.OkClient.execute(OkClient.java:53)
+                                                                            at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326)
+                                                                            at retrofit.RestAdapter$RestHandler.access$100(RestAdapter.java:220)
+                                                                            at retrofit.RestAdapter$RestHandler$1.invoke(RestAdapter.java:265)
+                                                                            at retrofit.RxSupport$2.run(RxSupport.java:55)
+                                                                            at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
+                                                                            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+                                                                            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+                                                                            at retrofit.Platform$Android$2$1.run(Platform.java:142)
+                                                                            at java.lang.Thread.run(Thread.java:818)
+                                                                         Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+                                                                            at libcore.io.Posix.android_getaddrinfo(Native Method)
+                                                                            at libcore.io.ForwardingOs.android_getaddrinfo(ForwardingOs.java:55)
+                                                                            at java.net.InetAddress.lookupHostByName(InetAddress.java:446)
+                                                                            at java.net.InetAddress.getAllByNameImpl(InetAddress.java:255) 
+                                                                            at java.net.InetAddress.getAllByName(InetAddress.java:218) 
+                                                                            at com.squareup.okhttp.internal.Dns$1.getAllByName(Dns.java:29) 
+                                                                            at com.squareup.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:231) 
+                                                                            at com.squareup.okhttp.internal.http.RouteSelector.next(RouteSelector.java:124) 
+                                                                            at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:317) 
+                                                                            at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:241) 
+                                                                            at com.squareup.okhttp.Call.getResponse(Call.java:198) 
+                                                                            at com.squareup.okhttp.Call.execute(Call.java:80) 
+                                                                            at retrofit.client.OkClient.execute(OkClient.java:53) 
+                                                                            at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:326) 
+                                                                            at retrofit.RestAdapter$RestHandler.access$100(RestAdapter.java:220) 
+                                                                            at retrofit.RestAdapter$RestHandler$1.invoke(RestAdapter.java:265) 
+                                                                            at retrofit.RxSupport$2.run(RxSupport.java:55) 
+                                                                            at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422) 
+                                                                            at java.util.concurrent.FutureTask.run(FutureTask.java:237) 
+                                                                            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112) 
+                                                                            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587) 
+                                                                            at retrofit.Platform$Android$2$1.run(Platform.java:142) 
+                                                                            at java.lang.Thread.run(Thread.java:818) 
+12-07 01:11:18.423 22319-22356/com.example.observableconcat D/Retrofit: ---- END ERROR
+12-07 01:11:18.453 22319-22319/com.example.observableconcat D/MainActivity: onError
+12-07 01:11:18.473 22319-22319/com.example.observableconcat I/Timeline: Timeline: Activity_idle id: android.os.BinderProxy@324e0a84 time:204983483
