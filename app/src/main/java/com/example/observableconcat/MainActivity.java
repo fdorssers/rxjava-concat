@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.observableconcat.model.RepoModel;
 import com.example.observableconcat.model.RepoModelImpl;
@@ -25,12 +27,16 @@ public class MainActivity extends AppCompatActivity {
 
     private final static String TAG = MainActivity.class.getSimpleName();
 
+    TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        textView = (TextView) findViewById(R.id.textview);
 
         getRepositories();
     }
@@ -59,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getRepositories() {
         RepoModel repoModel = new RepoModelImpl();
-        repoModel.getRepositories().delay(1, TimeUnit.SECONDS)
+        repoModel.getRepositories()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<List<Repository>>() {
@@ -80,7 +86,11 @@ public class MainActivity extends AppCompatActivity {
                             stringBuilder.append(repository.name);
                             stringBuilder.append(" ");
                         }
+                        Log.d(TAG, " ");
                         Log.d(TAG, "onNext: " + stringBuilder.toString());
+                        Log.d(TAG, " ");
+                        Toast.makeText(MainActivity.this, "onNext", Toast.LENGTH_SHORT).show();
+                        textView.setText("Called onNext");
                     }
                 });
     }
